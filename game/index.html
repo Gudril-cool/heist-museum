@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Museum Heist — Malam di Galeri.
+     Game heist top-down: susupi tiga ruangan museum, curi Bulan Zamrud,
+     kabur lewat pintu darurat. Semua art digambar di canvas dan semua
+     suara disintesis WebAudio — tanpa aset eksternal, tanpa network.
+     Mode demo untuk screenshot (render asli lewat jalur yang sama):
+     ?room=1&px=9&py=8&alarm=35&gw=1,0&freeze=1  atau  ?screen=win -->
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Museum Heist — Malam di Galeri</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>Museum Heist <span>— Malam di Galeri</span></h1>
+    <div class="sub">Heist top-down · 3 ruangan · curi Bulan Zamrud</div>
+  </header>
+  <div id="hud">
+    <div class="cell" id="meter-cell">
+      <span class="label">Alarm</span>
+      <div id="hud-meter"><div id="hud-meter-fill"></div></div>
+      <span id="hud-meter-label">TERSEMBUNYI — 0</span>
+    </div>
+    <div class="cell"><span class="label">Ruang</span><span class="value" id="hud-room">RUANG 1/3 · Lobi</span></div>
+    <div class="cell"><span class="label">Waktu</span><span class="value" id="hud-timer">00:00</span></div>
+    <div class="cell"><span class="label">Skor</span><span class="value" id="hud-score">0</span></div>
+    <div class="cell"><span class="label">Loot</span><span class="value" id="hud-loot">0/2</span></div>
+    <div class="cell"><span class="label">Alat</span><span class="value" id="hud-tools">Koin 3 · EMP 1 · Asap 2</span></div>
+    <div class="cell"><span class="label">Status</span><span class="value" id="hud-status">—</span></div>
+  </div>
+  <div id="stage">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="overlay">
+      <div id="overlay-card">
+        <h2 id="overlay-title"></h2>
+        <div id="overlay-body"></div>
+        <button id="overlay-btn"></button>
+      </div>
+    </div>
+  </div>
+  <div id="tools">
+    <button id="tool-coin" type="button">🪙 Koin Pengalih (1) — 3x</button>
+    <button id="tool-emp" type="button">⚡ EMP Kamera (2) — 1x</button>
+    <button id="tool-smoke" type="button">💨 Asap (3) — 2x</button>
+    <button id="mute-btn" type="button">Suara: Hidup (M)</button>
+  </div>
+  <footer>
+    <div id="hud-hint">WASD bergerak · Shift menyelinap · 1/2/3 alat · M suara</div>
+    <div><b>Kerucut kuning</b> = pandangan penjaga · <b>Merah</b> = kamera/laser · <b>Hijau</b> = EXIT</div>
+  </footer>
+</div>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
