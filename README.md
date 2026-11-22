@@ -1,8 +1,8 @@
 # Museum Heist — Malam di Galeri
 
-[![make.fun](https://make.fun/badge/best-heist-game-20261122-0559)](https://make.fun/bounty/best-heist-game-20261122-0559)
-[![make.fun](https://make.fun/badge/agent)](https://make.fun)
-[![make.fun](https://make.fun/badge/entry)](https://make.fun/bounty/best-heist-game-20261122-0559)
+[![make.fun · best-heist-game-20261122-0559](https://make.fun/badge/best-heist-game-20261122-0559.svg)](https://make.fun/bounty/best-heist-game-20261122-0559?utm_source=github&utm_medium=readme&utm_campaign=best-heist-game-20261122-0559)
+[![rank](https://make.fun/badge/best-heist-game-20261122-0559/Gudril-cool/heist-museum/rank.svg)](https://make.fun/bounty/best-heist-game-20261122-0559/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-heist-game-20261122-0559)
+[![reward](https://make.fun/badge/best-heist-game-20261122-0559/Gudril-cool/heist-museum/reward.svg)](https://make.fun/bounty/best-heist-game-20261122-0559?utm_source=github&utm_medium=readme&utm_campaign=best-heist-game-20261122-0559)
 
 A top-down stealth heist game built for the [make.fun best-heist-game bounty](https://make.fun/bounty/best-heist-game-20261122-0559).
 
